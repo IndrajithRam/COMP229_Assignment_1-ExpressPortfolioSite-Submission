@@ -1,0 +1,51 @@
+<%-include partials/header.ejs%>
+  <%-include partials/main_nav.ejs%>
+    <!--Main Nav Navigation-->
+
+    <main class="container">
+      <div class="jumbotron">
+        <h1 class="display-4 text-center">
+          <%= title %>
+        </h1>
+        <div class="container project-style">
+          <div class="row">
+
+            <!-- Details about the projects I've worked on -->
+            <div class="col-4">
+              <h1>Synchrony Financial</h1>
+              <p class="synchtext">IHS (Integrated Hosted Solution) is a new application which was
+                developed and
+                tested to
+                take
+                care of the transactions/payments happening in CCD (Care Credit Direct) internally, the
+                previous application. IHS takes care of completing the transactions which were initiated through
+                CCD(Care Credit Direct),basically a merchant-oriented application.</p>
+            </div>
+
+            <div class="col-4">
+              <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Concardis</h1>
+              <p class="Concardtext">Smart-pay is a tool which allows Merchants to accept payments from their customers
+                using
+                a
+                POS. It also includes an Web and Mobile application which facilitates the Merchant to track their
+                transactions happening real-time through the Smart Pay POS.</p>
+            </div>
+
+            <div class="col-4">
+              <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T-Net</h1>
+              <p class="Concardtext">The T-Net application is a platform for the customers to buy new devices, services,
+                accessories,
+                etc,. Customers can place their orders online through the web app and track their order statuses
+                with the reference ID.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--<h1><%= title %></h1>-->
+    <!--<p>Welcome to <%= title %></p>-->
+    <!--Script section-->
+
+    <%-include partials/bottom_nav.ejs%>
+      <%-include partials/footer.ejs%>
