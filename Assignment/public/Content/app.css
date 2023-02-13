@@ -50,20 +50,35 @@ a {
 
 /* Setting background colour for the text in services page*/
 .synchtext {
+    color: black;
     width: 320px;
     padding: 10px;
-    border: 5px solid gray;
+    /* border: 5px solid gray; */
     margin: 0;
     background-color: rgb(51, 51, 51);
+    background-image: url(../Assets/images/synch.PNG);
 }
 
 /* Setting background colour for the text in services page*/
 .Concardtext {
+    color: black;
     width: 320px;
     padding: 10px;
-    border: 5px solid gray;
+    /* border: 5px solid gray; */
     margin: 0;
     background-color: rgb(51, 51, 51);
+    background-image: url(../Assets/images/concard.PNG);
+}
+
+/* Setting background colour for the text in services page*/
+.Tmobtext {
+    color: white;
+    width: 320px;
+    padding: 10px;
+    /* border: 5px solid gray; */
+    margin: 0;
+    background-color: rgb(51, 51, 51);
+    background-image: url(../Assets/images/T-mob.PNG);
 }
 
 /* Setting background colour for the text in home page*/
@@ -152,6 +167,9 @@ a {
     overflow: hidden;
 
 }
+
+
+/* Setting the transition effect for the about me Text in About page */
 
 .aboutmeheading {
     animation: bounce 2s linear infinite;
