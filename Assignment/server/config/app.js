@@ -1,3 +1,9 @@
+/* app.js
+   Name: Indrajith Ram Loganathan
+   Student ID: 301248231
+   Date: 27/02/2023
+*/
+
 let createError = require('http-errors');
 let express = require('express');
 var favicon = require('serve-favicon');
@@ -26,7 +32,7 @@ mongoDB.once('open', () => {
 
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
-let booksRouter = require('../routes/book');
+// let booksRouter = require('../routes/book');
 let contactsRouter = require('../routes/contacts');
 
 let app = express();
@@ -72,7 +78,7 @@ passport.deserializeUser(User.deserializeUser());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/bookList', booksRouter);
+// app.use('/bookList', booksRouter);
 app.use('/contactList', contactsRouter);
 
 // catch 404 and forward to error handler
