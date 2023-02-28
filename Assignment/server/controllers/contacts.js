@@ -15,7 +15,7 @@ module.exports.displayList = (req, res, next) => {
         }
         else {
             console.log(contactList);
-            const sortedContactList = contactList.sort((a, b) => a.Name.localeCompare(b.Name))
+            const sortedContactList = contactList.sort((a, b) => a.Customer_Name.localeCompare(b.Customer_Name))
             res.render('contact/list', { title: 'Business Contacts', ContactList: sortedContactList, displayName: req.user ? req.user.displayName : '' });
         }
     });
