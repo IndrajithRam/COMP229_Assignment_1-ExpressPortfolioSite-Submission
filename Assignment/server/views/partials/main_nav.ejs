@@ -21,7 +21,7 @@
           <%}else{%>
         <li class="nav-item">
           <%}%>
-            <a class="nav-link active" aria-current="page" href="/home"><i
+            <a class="nav-link active" style="color: violet;" aria-current="page" href="/home"><i
                 class="fa-solid fa-house-chimney me-2"></i>Home</a>
         </li>
         <% if(title=="Home" ){%>
@@ -29,7 +29,7 @@
             <%}else{%>
           <li class="nav-item">
             <%}%>
-              <a class="nav-link active" aria-current="page" href="/about"><i
+              <a class="nav-link active" style="color: indigo;" aria-current="page" href="/about"><i
                   class="fa-solid fa-address-card me-2"></i>About Me</a>
           </li>
           <% if(title=="Home" ){%>
@@ -37,7 +37,7 @@
               <%}else{%>
             <li class="nav-item">
               <%}%>
-                <a class="nav-link active" aria-current="page" href="/projects"><i
+                <a class="nav-link active" style="color: rgb(3, 3, 133);" aria-current="page" href="/projects"><i
                     class="fa-brands fa-product-hunt me-2"></i>Projects</a>
             </li>
             <% if(title=="Home" ){%>
@@ -45,7 +45,7 @@
                 <%}else{%>
               <li class="nav-item">
                 <%}%>
-                  <a class="nav-link active" aria-current="page" href="/services"><i
+                  <a class="nav-link active" style="color: rgb(93, 207, 93);" aria-current="page" href="/services"><i
                       class="fa-brands fa-servicestack me-2"></i>Services</a>
               </li>
               <% if(title=="Home" ){%>
@@ -53,7 +53,7 @@
                   <%}else{%>
                 <li class="nav-item">
                   <%}%>
-                    <a class="nav-link active" aria-current="page" href="/contact"><i
+                    <a class="nav-link active" style="color: yellow;" aria-current="page" href="/contact"><i
                         class="fa-solid fa-address-book me-2"></i>Contact Me</a>
                 </li>
                 <% if(title=="Books" ){%>
@@ -61,16 +61,17 @@
                     <%}else{%>
                   <li class="nav-item">
                     <%}%>
-                      <a class="nav-link active" aria-current="page" href="/contactList"><i
+                      <a class="nav-link active" style="color: orange;" aria-current="page" href="/contactList"><i
                           class="fa-solid fa-book"></i>Business Contact List</a>
                   </li>
                   <%if(typeof displayName=='string' &&displayName){%>
-                    <li class="navbar-text"><i class="fas fa-lg fa-user"></i>Welcome,<%=displayName%>
+                    <li class="navbar-text" style="color: whitesmoke;"><i class="fas fa-lg fa-user"></i>Welcome,
+                      <%=displayName%>
                     </li>
-                    <li class="nav-item"><a href="/logout" class="nav-link"><i
+                    <li class="nav-item"><a href="/logout" class="nav-link" style="color:red;"><i
                           class="fas fa-lg fa-sign-out-alt"></i>logout</a></li>
                     <%} else {%>
-                      <li class="nav-item"><a href="/login" class="nav-link"><i
+                      <li class="nav-item"><a href="/login" class="nav-link" style="color: greenyellow;"><i
                             class="fas fa-lg fa-sign-in-alt"></i>Login</a></li>
                       <%}%>
 
